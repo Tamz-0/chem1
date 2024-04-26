@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+<head>
+    <meta charset="utf-8">
+  
+    <!-- Linking the stylesheet -->
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!-- Linking the Jquery script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  
+    <script>
+        $(document).ready(function() {
+            $(".fa-search").click(function() {
+                $(".icon").toggleClass("active");
+                $("input[type='text']").toggleClass("active");
+            });
+        });
+    </script>
+  
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+    <style>
+  
+        /* Importing the fonts */
+        @import url(
+'https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+  
+        /* Body of the page */
+        body {
+            background: #b0d78d;
+        }
+  
+        /* Styling all the elements in nav as a whole */
+        nav {
+            background: #053f18;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+            padding: 0 50px;
+        }
+  
+        /* Styling the logo */
+        nav .logo {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 600;
+            
+        }
+  
+        /* Styling all the nav items as a whole */
+        nav .nav-items {
+            display: flex;
+            flex: 1;
+            padding: 0 0 0 100px;
+        }
+  
+        /* Styling the list items in the nav tag */
+        nav .nav-items li {
+            list-style: none;
+            padding: 0 10px;
+        }
+  
+        /* Styling each list items */
+        nav .nav-items li a {
+            color: #9b9797;
+            font-size: 15px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+  
+        /* Setting the hover colour on the list items*/
+          
+        nav .nav-items li a:hover {
+            font-weight: 600;
+            transition-duration: 0.6s;
+            color: #ffffff;
+        }
+          
+        nav .searchbar {
+            position: relative;
+        }
+  
+        /* Styling the search box where the 
+            input would be given */
+        nav .searchbar input[type="text"] {
+            border: 0;
+            padding: 0;
+            width: 0px;
+            height: 35px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+  
+        /* Styling the search bar icon */
+        nav .searchbar .icon {
+            display: flex;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 35px;
+            height: 100%;
+            background: none;
+            border-radius: 3px;
+            color: #fff;
+            transition: all 0.5s 0.3s ease;
+        }
+          
+        nav .searchbar .icon i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+          
+        nav .searchbar .icon.active {
+            background: #062333;
+            transition: all 0.3s ease;
+        }
+          
+        nav .searchbar input[type="text"].active {
+            width: 250px;
+            padding: 0 10px;
+            transition: all 0.5s 0.2s ease;
+        }
+          
+        nav .licon li {
+            list-style: none;
+            display: flex;
+        }
+          
+        nav .licon li a {
+            padding: 0 20px;
+        }
+  
+        /* Changing the colour of the login 
+            icon when hovered over*/
+          
+        .fa-user-circle:hover {
+            color: #0e0d0d !important;
+        }
+
+        section h2{
+            font-family: cursive;
+            font-size:xx-large;
+            color: #315c3e;
+        }
+
+        .main-heading{
+            background-image:url(https://images.pexels.com/photos/39553/industry-sunrise-clouds-fog-39553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    
+            background-size: cover;
+            background-position:bottom;
+
+        }
+
+        
+        
+        .main-heading h1{
+            text-align: center;
+            font-size: 10x;
+            color: rgb(55, 194, 27);
+            text-shadow: #000000;
+            padding-top: 20%;
+            padding-bottom: 20%;
+
+        }
+
+        .home{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url(https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-914.jpg?w=1060&t=st=1679492771~exp=1679493371~hmac=34919b1f741d24a11231549ff70b6c584bc4da6652891ea72744ce62064ab552) no-repeat;
+            background-size: cover;
+            background-position: center;
+}
+            
+        .nav-items li::after{
+            content: '';
+            width: 10%;
+            height: 5px;
+            background: #f8f8f7;
+            display:block;
+            margin:auto;
+        }
+
+        .nav-items li:hover::after{
+            width:100%;
+            transition-duration: 0.8s;
+
+        }
+
+        .main-heading h1::after{
+            content: '';
+            width: 0%;
+            height: 4px;
+            background: #033510;
+            display:block;
+            margin:auto;
+        }
+
+        .main-heading h1:hover::after{
+            width:73%;
+            
+            transition-duration: 1s;
+            
+        }
+        
+        .heading h2{
+            text-align: center;
+            padding-bottom: 5%;
+        }
+
+
+        .heading h2::after{
+            content: '';
+            
+            width: 20%;
+            height: 4px;
+            background: #dde2de;
+            display:block;
+            margin:auto;
+        }
+
+        .heading h2:hover::after{
+            left: 20px;
+            width:100%;
+            
+            transition-duration: 1s;
+            
+        }
+
+        .heading p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            padding-bottom: 3%;
+        }
+
+        .heading ul li{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            padding-bottom: 3%;
+        }
+
+        .heading{
+            padding-bottom: 20%;
+        }
+
+        .heading .image{
+            text-align: center;
+        }
+
+        .heading h3{
+            font-size: 30px;
+            padding-bottom: 2%;
+        }
+
+        .heading ul li{
+            list-style-type: disc !important;  
+        padding: 10px 0 !important;
+        padding-left: 20px !important;
+        }
+        .background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-overlay {
+    background-image: url('https://images.pexels.com/photos/3178786/pexels-photo-3178786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    backdrop-filter: blur(10px); 
+}
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.login-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 18px;
+}
+
+.login-btn {
+    background-color: #66CDAA; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #4682B4; 
+    transform: scale(1.1); 
+}
+
+
+
+    </style>
+</head>
+  <br>
+<body style="background-color: #000000;color:white">
+    <nav style="background-color: #000000">
+        <div class="logo">
+            <a style="color:white" href="index.html">Future</a>
+        </div>
+  
+        <div class="nav-items" >
+        
+            <!-- The Menu items -->
+        <li><a href="climate.html">Climate Change</a></li>
+        <li><a href="water.html">Water Scarcity</a></li>
+        <li><a href="d.html">Deforestation</a></li>
+        <li><a href="p.html">Plastic Pollution</a></li>
+        <li><a href="b.html">Biodiversity</a></li>
+        <li><a href="a.html">Air pollution</a></li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="login-btn" onclick="location.href='login.html';">Login</button>
+    
+        </div>
+    </div>
+    <main>
+        <section class="heading" id="climate-change">
+          <h2 style="color:white">Climate Change</h2>
+          <p>Climate change is one of the biggest challenges facing the planet. It is caused by the emission of greenhouse gases like carbon dioxide and methane into the atmosphere. These gases trap heat from the sun and cause the planet to warm up, leading to rising sea levels, more extreme weather events, and other harmful effects.</p>
+          
+          <P>One of the most significant effects of climate change is the rise in sea levels. This is caused by the melting of glaciers and ice sheets, which adds more water to the oceans. As sea levels rise, it causes coastal flooding and erosion, which can damage homes, businesses, and infrastructure. It also threatens the existence of small island nations and low-lying areas, which could be completely submerged if sea levels continue to rise.</P>
+          <p>Climate change is an issue that is currently affecting the planet in a variety of ways. Climate change is caused by human activities that emit greenhouse gases into the atmosphere, which trap heat and cause the Earth's temperature to rise. The effects of climate change can be seen in many different ways, including rising sea levels, more extreme weather patterns, and changes in the distribution of plants and animals.</p>
+          <p>Climate change also affects the distribution of plants and animals. As temperatures rise, some species are forced to move to more suitable habitats, while others become extinct. This can disrupt entire ecosystems and cause a loss of biodiversity. It can also impact food chains and the availability of natural resources.</p>
+          <p class="image">
+          <img src="https://api.time.com/wp-content/uploads/2015/06/climate-change-singapore.jpeg?quality=85&w=1600" height="60%" width="60%">
+          </p>
+          <p>To combat climate change, it is essential to reduce greenhouse gas emissions. This can be done by transitioning to renewable energy sources, such as solar and wind power, and reducing the use of fossil fuels. It also requires the implementation of sustainable practices in agriculture, transportation, and industry. Governments, businesses, and individuals all have a role to play in reducing emissions and taking steps to mitigate the effects of climate change.</p>
+          <p>In conclusion, climate change is a significant issue that is affecting the planet in many different ways. Rising sea levels, extreme weather patterns, and changes in the distribution of plants and animals are just a few of the effects of climate change. To combat this issue, it is necessary to reduce greenhouse gas emissions and implement sustainable practices in all areas of life. The future of our planet depends on our ability to address the issue of climate change and take action to protect our planet and its inhabitants.</p>
+          <p class="image">
+            <img src="https://images.pexels.com/photos/929382/pexels-photo-929382.jpeg?auto=compress&cs=tinysrgb&w=600" height="60%" width="60%">
+          </p>
+          <p>Another effect of climate change is the increase in extreme weather patterns. This includes more frequent and severe heatwaves, droughts, hurricanes, and flooding. These weather patterns can cause significant damage to communities and infrastructure, including crops, homes, and transportation systems. They can also lead to food and water shortages, which can have devastating consequences on vulnerable populations.</p>
+          <h3>Solution:</h3>
+          <p>Solutions to climate change include reducing greenhouse gas emissions through the use of renewable energy sources like solar and wind power, and implementing energy efficiency measures to reduce energy consumption. Additionally, individuals can reduce their carbon footprint by driving less, eating a plant-based diet, and conserving energy in their homes.</p>
+        
+        <ul>
+            <li>1. SHIFT TO RENEWABLE ENERGY SOURCES IN ALL KEY SECTORS</li>
+            <li>2. REDUCE FOOD LOSS AND WASTE AND SHIFT TO MORE SUSTAINABLE DIETS</li>
+            <li>3. HALT DEFORESTATION AND COMMIT TO REBUILDING DAMAGED ECOSYSTEMS</li>
+            <li>4. EMBRACE ELECTRIC VEHICLES, PUBLIC TRANSPORT, AND OTHER NON-MOTORIZED OPTIONS FOR GETTING AROUND</li>
+            <li>5. SUBSIDIZE LOW-CARBON ALTERNATIVES FOR URBAN PLANNING</li> 
+            <li>6. STRENGTHEN RESILIENCE AND CLIMATE ADAPTATION METHODS IN MAPA COMMUNITIES</li> 
+            <li>7 .INVEST IN DISASTER RISK REDUCTION</li>
+        </ul>
+    
+        </section>
+        </main>
+        </body>
+        </html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+<head>
+    <meta charset="utf-8">
+  
+    <!-- Linking the stylesheet -->
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!-- Linking the Jquery script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  
+    <script>
+        $(document).ready(function() {
+            $(".fa-search").click(function() {
+                $(".icon").toggleClass("active");
+                $("input[type='text']").toggleClass("active");
+            });
+        });
+    </script>
+  
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+    <style>
+  
+        /* Importing the fonts */
+        @import url(
+'https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+  
+        /* Body of the page */
+        body {
+            background: #b0d78d;
+        }
+  
+        /* Styling all the elements in nav as a whole */
+        nav {
+            background: #053f18;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+            padding: 0 50px;
+        }
+  
+        /* Styling the logo */
+        nav .logo {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 600;
+            
+        }
+  
+        /* Styling all the nav items as a whole */
+        nav .nav-items {
+            display: flex;
+            flex: 1;
+            padding: 0 0 0 100px;
+        }
+  
+        /* Styling the list items in the nav tag */
+        nav .nav-items li {
+            list-style: none;
+            padding: 0 10px;
+        }
+  
+        /* Styling each list items */
+        nav .nav-items li a {
+            color: #9b9797;
+            font-size: 15px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+  
+        /* Setting the hover colour on the list items*/
+          
+        nav .nav-items li a:hover {
+            font-weight: 600;
+            transition-duration: 0.6s;
+            color: #ffffff;
+        }
+          
+        nav .searchbar {
+            position: relative;
+        }
+  
+        /* Styling the search box where the 
+            input would be given */
+        nav .searchbar input[type="text"] {
+            border: 0;
+            padding: 0;
+            width: 0px;
+            height: 35px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+  
+        /* Styling the search bar icon */
+        nav .searchbar .icon {
+            display: flex;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 35px;
+            height: 100%;
+            background: none;
+            border-radius: 3px;
+            color: #fff;
+            transition: all 0.5s 0.3s ease;
+        }
+          
+        nav .searchbar .icon i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+          
+        nav .searchbar .icon.active {
+            background: #062333;
+            transition: all 0.3s ease;
+        }
+          
+        nav .searchbar input[type="text"].active {
+            width: 250px;
+            padding: 0 10px;
+            transition: all 0.5s 0.2s ease;
+        }
+          
+        nav .licon li {
+            list-style: none;
+            display: flex;
+        }
+          
+        nav .licon li a {
+            padding: 0 20px;
+        }
+  
+        /* Changing the colour of the login 
+            icon when hovered over*/
+          
+        .fa-user-circle:hover {
+            color: #0e0d0d !important;
+        }
+
+        section h2{
+            font-family: cursive;
+            font-size:xx-large;
+            color: #315c3e;
+        }
+
+        .main-heading{
+            background-image:url(https://images.pexels.com/photos/39553/industry-sunrise-clouds-fog-39553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    
+            background-size: cover;
+            background-position:bottom;
+
+        }
+
+        
+        
+        .main-heading h1{
+            text-align: center;
+            font-size: 10x;
+            color: rgb(55, 194, 27);
+            text-shadow: #000000;
+            padding-top: 20%;
+            padding-bottom: 20%;
+
+        }
+
+        .home{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url(https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-914.jpg?w=1060&t=st=1679492771~exp=1679493371~hmac=34919b1f741d24a11231549ff70b6c584bc4da6652891ea72744ce62064ab552) no-repeat;
+            background-size: cover;
+            background-position: center;
+}
+            
+        .nav-items li::after{
+            content: '';
+            width: 10%;
+            height: 4px;
+            background: #e4e6e1;
+            display:block;
+            margin:auto;
+        }
+
+        .nav-items li:hover::after{
+            width:100%;
+            transition-duration: 0.8s;
+
+        }
+
+        .main-heading h1::after{
+            content: '';
+            width: 0%;
+            height: 4px;
+            background: #d3dbd5;
+            display:block;
+            margin:auto;
+        }
+
+        .main-heading h1:hover::after{
+            width:73%;
+            
+            transition-duration: 1s;
+            
+        }
+        
+        .heading h2{
+            text-align: center;
+            padding-bottom: 5%;
+        }
+
+
+        .heading h2::after{
+            content: '';
+            
+            width: 20%;
+            height: 4px;
+            background: #ebeeec;
+            display:block;
+            margin:auto;
+        }
+
+        .heading h2:hover::after{
+            left: 20px;
+            width:100%;
+            
+            transition-duration: 1s;
+            
+        }
+
+        .heading p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            padding-bottom: 3%;
+        }
+
+        .heading ul li{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            padding-bottom: 3%;
+        }
+
+        .heading{
+            padding-bottom: 20%;
+        }
+
+        .heading .image{
+            text-align: center;
+        }
+
+        .heading h3{
+            font-size: 30px;
+            padding-bottom: 2%;
+        }
+
+        .heading ul li{
+            list-style-type: disc !important;  
+        padding: 10px 0 !important;
+        padding-left: 20px !important;
+        }
+        .background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-overlay {
+    background-image: url('https://images.pexels.com/photos/3178786/pexels-photo-3178786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    backdrop-filter: blur(10px); 
+}
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.login-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 18px;
+}
+
+.login-btn {
+    background-color: #66CDAA; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #4682B4; 
+    transform: scale(1.1); 
+}
+
+
+
+    </style>
+</head>
+  
+<body>
+    <nav style="background-color:black">
+        <div class="logo">
+            <a style="color:white" href="index.html">Future</a>
+        </div>
+  
+        <div class="nav-items">
+        
+            <!-- The Menu items -->
+        <li><a href="climate.html">Climate Change</a></li>
+        <li><a href="water.html">Water Scarcity</a></li>
+        <li><a href="d.html">Deforestation</a></li>
+        <li><a href="p.html">Plastic Pollution</a></li>
+        <li><a href="b.html">Biodiversity</a></li>
+        <li><a href="a.html">Air pollution</a></li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="login-btn" onclick="location.href='login.html';">Login</button>
+    
+        </div>
+    </nav>
+    <section class="heading" id="biodiversity-loss" style="color:white;background-color:black;">
+        <h2 style="color:#fff">Biodiversity</h2>
+        <p>Biodiversity loss, also called loss of biodiversity, a decrease in biodiversity within a species, an ecosystem, a given geographic area, or Earth as a whole. Biodiversity, or biological diversity, is a term that refers to the number of genes, species, individual organisms within a given species, and biological communities within a defined geographic area, ranging from the smallest ecosystem to the global biosphere. (A biological community is an interacting group of various species in a common location.) Likewise, biodiversity loss describes the decline in the number, genetic variability, and variety of species, and the biological communities in a given area. This loss in the variety of life can lead to a breakdown in the functioning of the ecosystem where decline has happened.</p>
+        <p>Biodiversity is the variety of life on Earth, including the diversity of species, ecosystems, and genetic variation within species. Biodiversity loss refers to the decline in the number of species, the degradation of ecosystems, and the loss of genetic diversity. This is a significant environmental issue, with consequences for human well-being and the functioning of ecosystems.</p>
+        <p class="image">
+            <img src="https://th.bing.com/th?id=OIP.Adc8-cjbUhgXGukmSAdetAHaNF&w=188&h=332&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" height="60%" width="60%">
+        </p>
+        <p>Human activities have been a major driver of biodiversity loss. Habitat destruction, climate change, pollution, and overexploitation of natural resources are some of the primary causes of biodiversity loss. As humans continue to alter the natural environment, species are disappearing at an alarming rate.</p>
+        <p>Biodiversity loss has significant implications for human well-being. For example, the loss of pollinators such as bees and butterflies can have significant impacts on crop yields and food security. Additionally, many medicinal products are derived from plant and animal species, and the loss of biodiversity could reduce the availability of these treatments.</p>
+        <p>Biodiversity loss also affects the functioning of ecosystems. The extinction of species can disrupt food chains, alter nutrient cycling, and reduce ecosystem resilience. This can have cascading effects on other species and ultimately threaten the stability of ecosystems.</p>
+        <p>There are several initiatives in place to address biodiversity loss. Protected areas such as national parks and wildlife reserves have been established to conserve habitats and protect species. International agreements, such as the Convention on Biological Diversity, have been developed to promote conservation and sustainable use of biodiversity. Additionally, there are efforts to reduce habitat destruction, pollution, and overexploitation of natural resources.</p>
+        <p>However, more needs to be done to address the root causes of biodiversity loss. One of the most significant drivers of biodiversity loss is habitat destruction. Forests, wetlands, and other habitats are being cleared for agriculture, urbanization, and other development activities. Efforts to conserve biodiversity must include measures to protect and restore habitats.</p>
+        <p class="image">
+            <img src="https://th.bing.com/th?id=OIP.rVEPmB3QHZALnc7QRbOt5gHaFI&w=300&h=208&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" height="60%" width="60%">
+        </p>
+        <p>The idea of biodiversity is most often associated with species richness (the count of species in an area), and thus biodiversity loss is often viewed as species loss from an ecosystem or even the entire biosphere (see also extinction). However, associating biodiversity loss with species loss alone overlooks other subtle phenomena that threaten long-term ecosystem health. Sudden population declines may upset social structures in some species, which may keep surviving males and females from finding mates, which may then produce further population declines. Declines in genetic diversity that accompany rapid falls in population may increase inbreeding (mating between closely related individuals), which could produce a further decline in genetic diversity.</p>
+        <p>Climate change is also a major threat to biodiversity. Rising temperatures, changing precipitation patterns, and extreme weather events are altering habitats and disrupting ecosystems. Addressing climate change is essential to protecting biodiversity.</p>
+        <p>Finally, there is a need to shift societal values and behaviors towards more sustainable practices. Consumer choices, such as the demand for products made from rare or endangered species, can drive overexploitation and illegal trade. Education and awareness campaigns can help to promote the value of biodiversity and encourage more sustainable practices.</p>
+        <p>In conclusion, biodiversity loss is a significant environmental issue with consequences for human well-being and the functioning of ecosystems. Addressing the root causes of biodiversity loss, including habitat destruction, climate change, and unsustainable practices, is essential to protecting biodiversity. Protecting and restoring habitats, promoting sustainable practices, and shifting societal values towards biodiversity conservation can help to ensure a more sustainable future.</p>
+        <p>Even though a species is not eliminated from the ecosystem or from the biosphere, its niche (the role the species play in the ecosystems it inhabits) diminishes as its numbers fall. If the niches filled by a single species or a group of species are critical to the proper functioning of the ecosystem, a sudden decline in numbers may produce significant changes in the ecosystem’s structure. For example, clearing trees from a forest eliminates the shading, temperature and moisture regulation, animal habitat, and nutrient transport services they provide to the ecosystem.</p>
+        <h3>Solutions:</h3>
+        <ul>
+            <li>1. Protecting and restoring habitats: Conserving and restoring habitats such as forests, wetlands, and grasslands can help to prevent further loss of biodiversity.</li>
+            <li>2. Reducing pollution: Reducing pollution from sources such as agriculture, industry, and transportation can help to improve the health of ecosystems and the species that depend on them.</li>
+            <li>3. Controlling invasive species: Invasive species can outcompete native species for resources and space, leading to a decline in biodiversity. Controlling and managing invasive species can help to prevent further loss of biodiversity.</li>
+            <li>4. Reducing overfishing: Overfishing can lead to the decline and even extinction of species. Implementing sustainable fishing practices can help to reduce the impact on biodiversity.</li>
+            <li>5. Protecting endangered species: Protecting endangered species through legislation, habitat conservation, and other measures can help to prevent their extinction and preserve biodiversity.</li>
+            <li>6. Reducing greenhouse gas emissions: Climate change is a major threat to biodiversity, as it can alter habitats and disrupt ecosystems. Reducing greenhouse gas emissions can help to mitigate the impacts of climate change on biodiversity.</li>
+            <li>7. Educating and raising awareness: Educating people about the importance of biodiversity and the threats facing it can help to promote conservation efforts and increase public support for protecting biodiversity.</li>
+          </ul> 
+    </section>
+    </body>
+    </html>

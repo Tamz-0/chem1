@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+<head>
+    <meta charset="utf-8">
+  
+    <!-- Linking the stylesheet -->
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!-- Linking the Jquery script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  
+    <script>
+        $(document).ready(function() {
+            $(".fa-search").click(function() {
+                $(".icon").toggleClass("active");
+                $("input[type='text']").toggleClass("active");
+            });
+        });
+    </script>
+  
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+    <style>
+  
+        /* Importing the fonts */
+        @import url(
+'https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+  
+        /* Body of the page */
+        body {
+            background: #b0d78d;
+        }
+  
+        /* Styling all the elements in nav as a whole */
+        nav {
+            background: #053f18;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+            padding: 0 50px;
+        }
+  
+        /* Styling the logo */
+        nav .logo {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 600;
+            
+        }
+  
+        /* Styling all the nav items as a whole */
+        nav .nav-items {
+            display: flex;
+            flex: 1;
+            padding: 0 0 0 100px;
+        }
+  
+        /* Styling the list items in the nav tag */
+        nav .nav-items li {
+            list-style: none;
+            padding: 0 10px;
+        }
+  
+        /* Styling each list items */
+        nav .nav-items li a {
+            color: #9b9797;
+            font-size: 15px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+  
+        /* Setting the hover colour on the list items*/
+          
+        nav .nav-items li a:hover {
+            font-weight: 600;
+            transition-duration: 0.6s;
+            color: #ffffff;
+        }
+          
+        nav .searchbar {
+            position: relative;
+        }
+  
+        /* Styling the search box where the 
+            input would be given */
+        nav .searchbar input[type="text"] {
+            border: 0;
+            padding: 0;
+            width: 0px;
+            height: 35px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+  
+        /* Styling the search bar icon */
+        nav .searchbar .icon {
+            display: flex;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 35px;
+            height: 100%;
+            background: none;
+            border-radius: 3px;
+            color: #fff;
+            transition: all 0.5s 0.3s ease;
+        }
+          
+        nav .searchbar .icon i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+          
+        nav .searchbar .icon.active {
+            background: #062333;
+            transition: all 0.3s ease;
+        }
+          
+        nav .searchbar input[type="text"].active {
+            width: 250px;
+            padding: 0 10px;
+            transition: all 0.5s 0.2s ease;
+        }
+          
+        nav .licon li {
+            list-style: none;
+            display: flex;
+        }
+          
+        nav .licon li a {
+            padding: 0 20px;
+        }
+  
+        /* Changing the colour of the login 
+            icon when hovered over*/
+          
+        .fa-user-circle:hover {
+            color: #0e0d0d !important;
+        }
+
+        section h2{
+            font-family: cursive;
+            font-size:xx-large;
+            color: #315c3e;
+        }
+
+        .main-heading{
+            background-image:url(https://images.pexels.com/photos/39553/industry-sunrise-clouds-fog-39553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    
+            background-size: cover;
+            background-position:bottom;
+
+        }
+
+        
+        
+        .main-heading h1{
+            text-align: center;
+            font-size: 10x;
+            color: rgb(55, 194, 27);
+            text-shadow: #000000;
+            padding-top: 20%;
+            padding-bottom: 20%;
+
+        }
+
+        .home{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url(https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-914.jpg?w=1060&t=st=1679492771~exp=1679493371~hmac=34919b1f741d24a11231549ff70b6c584bc4da6652891ea72744ce62064ab552) no-repeat;
+            background-size: cover;
+            background-position: center;
+}
+            
+        .nav-items li::after{
+            content: '';
+            width: 10%;
+            height: 4px;
+            background: #f0f1ee;
+            display:block;
+            margin:auto;
+        }
+
+        .nav-items li:hover::after{
+            width:100%;
+            transition-duration: 0.8s;
+
+        }
+
+        .main-heading h1::after{
+            content: '';
+            width: 0%;
+            height: 4px;
+            background: #e4e9e5;
+            display:block;
+            margin:auto;
+        }
+
+        .main-heading h1:hover::after{
+            width:73%;
+            
+            transition-duration: 1s;
+            
+        }
+        
+        .heading h2{
+            text-align: center;
+            padding-bottom: 5%;
+        }
+
+
+        .heading h2::after{
+            content: '';
+            
+            width: 20%;
+            height: 4px;
+            background: #f4f7f5;
+            display:block;
+            margin:auto;
+        }
+
+        .heading h2:hover::after{
+            left: 20px;
+            width:100%;
+            
+            transition-duration: 1s;
+            
+        }
+
+        .heading p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            padding-bottom: 3%;
+        }
+
+        .heading ul li{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            padding-bottom: 3%;
+        }
+
+        .heading{
+            padding-bottom: 20%;
+        }
+
+        .heading .image{
+            text-align: center;
+        }
+
+        .heading h3{
+            font-size: 30px;
+            padding-bottom: 2%;
+        }
+
+        .heading ul li{
+            list-style-type: disc !important;  
+        padding: 10px 0 !important;
+        padding-left: 20px !important;
+        }
+        .background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-overlay {
+    background-image: url('https://images.pexels.com/photos/3178786/pexels-photo-3178786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    backdrop-filter: blur(10px); 
+}
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.login-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 18px;
+}
+
+.login-btn {
+    background-color: #66CDAA; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #4682B4; 
+    transform: scale(1.1); 
+}
+
+
+
+    </style>
+</head>
+  
+<body style="color:#f0f1ee;background-color: #000000;">
+    <nav style="color:#f0f1ee;background-color: #000000;">
+        <div class="logo">
+            <a style="color:white" href="index.html">Future</a>
+        </div>
+  
+        <div class="nav-items">
+        
+            <!-- The Menu items -->
+        <li><a href="climate.html">Climate Change</a></li>
+        <li><a href="water.html">Water Scarcity</a></li>
+        <li><a href="d.html">Deforestation</a></li>
+        <li><a href="p.html">Plastic Pollution</a></li>
+        <li><a href="b.html">Biodiversity</a></li>
+        <li><a href="a.html">Air pollution</a></li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="login-btn" onclick="location.href='login.html';">Login</button>
+    
+        </div>
+ 
+    </nav>
+    <section class="heading" id="water-scarcity">
+        <h2 style="color:#f0f1ee;background-color: #000000;">Water Scarcity</h2>
+        <p>Water scarcity is a growing problem around the world, as climate change and population growth put increasing pressure on water resources. This can lead to conflicts over water, and can also have serious impacts on human health and the environment.</p>
+        <p>Water scarcity refers to the lack of access to safe and sufficient water for human consumption and agricultural production. This is a growing problem that affects millions of people around the world. Water scarcity can have significant impacts on human health, the environment, and the economy.</p>
+        <p class="image">
+          <img src="https://images.pexels.com/photos/16389397/pexels-photo-16389397.jpeg?auto=compress&cs=tinysrgb&w=600" height="60%" width="60%">
+        </p>
+        <p>One of the primary causes of water scarcity is the growing global population, which puts increasing pressure on water resources. Other factors include climate change, pollution, and poor water management practices. When water resources are scarce, it can lead to a range of negative impacts.</p>
+        <p>Water scarcity has significant impacts on human health, particularly in developing countries. Lack of access to safe drinking water can lead to waterborne diseases, such as cholera and typhoid fever. It can also lead to malnutrition and dehydration, particularly in children. Women and girls are particularly affected by water scarcity, as they are often responsible for collecting water for their families, which can take up hours of their time each day.</p>
+        <p>Water scarcity also has significant impacts on the environment. When water resources are scarce, ecosystems can become degraded, leading to the loss of biodiversity and the destruction of habitats. Water scarcity can also lead to desertification, where land becomes barren and unsuitable for agriculture or habitation.</p>
+        <p>To combat water scarcity, it is necessary to implement policies and practices that promote sustainable water management. This can include the development of water conservation strategies, such as the use of drought-resistant crops and the promotion of water-efficient technologies. Other strategies include the development of water infrastructure, such as dams and irrigation systems, and the implementation of policies that promote equitable access to water resources.</p>
+        <p class="image">
+          <img src="https://media.istockphoto.com/id/917543550/photo/last-drop-of-water-symbolizing-drought.jpg?b=1&s=612x612&w=0&k=20&c=Q13B_TUmhgoFt893hv_t30zA4o3EjDI826p5c9ThZzw=" height="60%" width="60%">
+        </p>
+        <p>The economic impacts of water scarcity are also significant. Water scarcity can lead to crop failures and reduced agricultural yields, leading to economic losses for farmers and the agricultural industry. It can also lead to increased competition for water resources, which can drive up the price of water and lead to social and economic tensions.</p>
+        <p>In conclusion, water scarcity is a growing problem that has significant impacts on human health, the environment, and the economy. To combat water scarcity, it is necessary to implement policies and practices that promote sustainable water management and equitable access to water resources. The future of our planet depends on our ability to address the issue of water scarcity and take action to protect this precious resource.</p>
+        <h3>Solutions:</h3>
+        <p>Solutions to water scarcity include increasing water efficiency in agriculture and industry, promoting water conservation measures like rainwater harvesting and water recycling, and investing in new technologies like desalination to increase the availability of freshwater.</p>
+      
+        <ul>
+          <li>1. Save Water Whenever Possible</li>
+          <li>2. Education</li>
+          <li>3. Recycle Water</li>
+          <li>4. Advanced Technology Related to Water Conservation</li>
+          <li>5. Improve Practices Related to Farming</li> 
+          <li>6. Less Use of Chemicals in Farming</li> 
+          <li>7. Better Water Distribution Infrastructure</li>
+      </ul>
+  </section>
+  </body>
+  </html>
